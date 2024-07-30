@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daihatsu Xenia</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .car-detail-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px;
+            max-width: 1200px;
+            width: 90%;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+        .car-detail-image {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .car-detail-image img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .car-specs {
+            flex: 1;
+            max-width: 600px;
+            text-align: left;
+        }
+        .car-specs h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #007bff;
+            font-weight: 600;
+        }
+        .car-specs p {
+            font-size: 18px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        .car-specs ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .car-specs ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .car-specs ul li::before {
+            content: '✔️';
+            position: absolute;
+            left: 0;
+            color: #007bff;
+        }
+        .button-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .rent-button, .back-button {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.2s;
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .rent-button:hover, .back-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .rent-button:active, .back-button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div class="car-detail-container">
+        <div class="car-detail-image">
+            <img src="xenia.jpg" alt="Daihatsu Xenia">
+        </div>
+        <div class="car-specs">
+            <h2>Daihatsu Xenia</h2>
+            <p>Spesifikasi :</p>
+            <ul>
+                <li>Jenis Transmisi : Manual</li>
+                <li>Kapasitas Tempat Duduk : 7 orang</li>
+                <li>Kapasitas mesin : 1498 CC</li>
+                <li>Tenaga : 97 HP</li>
+            </ul>
+            <p>Harga Sewa : RP 500.000/hari</p>
+            <div class="button-container">
+                <a href="../../datacustomer.html" class="rent-button">Sewa Sekarang</a>
+                <a href="javascript:history.back()" class="back-button">Kembali</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

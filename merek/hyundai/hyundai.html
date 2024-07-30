@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Mobil Hyundai</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .car-card {
+        background-color: #ffffff;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: calc(33.333% - 20px);
+        box-sizing: border-box;
+        transition: transform 0.2s;
+    }
+
+    .car-card:hover {
+        transform: scale(1.05);
+    }
+
+    .car-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .car-details {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .car-details h3 {
+        margin: 0 0 10px;
+        font-size: 18px;
+        color: #343a40;
+    }
+
+    .car-details p {
+        margin: 0;
+        font-size: 16px;
+        color: #007bff;
+    }
+     .back-button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 14px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+        transition: background-color 0.3s ease;
+        text-decoration: none; /* Tambahkan ini agar teks tidak bergaris bawah */
+    }
+
+    .back-button:hover {
+        background-color: #0056b3;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="car-card">
+            <a href="creta.html">
+                <div class="car-image">
+                    <img src="creta.jpg" alt="creta">
+                </div>
+            </a>
+            <div class="car-details">
+                <h3>Hyundai Creta</h3>
+                <p>RP 600.000/hari</p>
+            </div>
+        </div>
+        <div class="car-card">
+            <a href="palisade.html">
+                <div class="car-image">
+                    <img src="palisade.jpg" alt="palisade">
+                </div>
+            </a>
+            <div class="car-details">
+                <h3>Hyundai Palisade</h3>
+                <p>RP 700.000/hari</p>
+            </div>
+        </div>
+        <div class="car-card">
+            <a href="kona.html">
+                <div class="car-image">
+                    <img src="kona.jpg" alt="kona">
+                </div>
+            </a>
+            <div class="car-details">
+                <h3>Hyundai Kona Electric</h3>
+                <p>RP 750.000/hari</p>
+            </div>
+        </div>
+        <div class="car-card">
+            <a href="stargazer.html">
+                <div class="car-image">
+                    <img src="stargazer.jpg" alt="stargazer">
+                </div>
+            </a>
+            <div class="car-details">
+                <h3>Hyundai Stargazer</h3>
+                <p>RP 700.000/hari</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <button class="back-button" onclick="goBack()">Kembali</button>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
